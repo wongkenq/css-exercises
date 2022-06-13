@@ -4,7 +4,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex: 1;
 }
 
 .header {
@@ -22,14 +22,17 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
-  /* height: 500px; */
-  padding: 16px;
+  /* padding: 16px; */
   margin: 0;
+  display: flex;
   flex-shrink: 0;
 }
 
@@ -40,15 +43,20 @@ body {
   width: 300px;
   height: 200px;
   padding: 16px;
+  margin: 32px;
 }
 
 .content {
   height: 100%;
   display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 16px;
 }
 
 a {
@@ -59,5 +67,6 @@ a {
 
 .cards {
   display: flex;
-
+  gap: 8px;
+  flex-wrap: wrap;
 }
